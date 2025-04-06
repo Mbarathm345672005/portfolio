@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UI/UX Portfolio</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #0f172a;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #1e293b;
+      padding: 1rem;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #0f172a;
+    }
+
+    /* About Me */
+    #about p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    /* Projects */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      padding: 1rem;
+      font-size: 1.2rem;
+    }
+
+    /* Skills */
+    .bar {
+      background: #e2e8f0;
+      border-radius: 30px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+
+    .bar-fill {
+      background: #3b82f6;
+      padding: 0.5rem;
+      color: white;
+      width: 0;
+      transition: width 1s ease-out;
+      border-radius: 30px;
+    }
+
+    /* Contact */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      padding: 0.75rem;
+      border: none;
+      background: #2563eb;
+      color: white;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #0f172a;
+      color: #fff;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <img 
+        src="profile.jpg" 
+        alt="Profile" 
+        style="width: 120px; height: 120px; border-radius: 50%; border: 4px solid #38bdf8; margin-bottom: 1rem;"
+      />
+      <h1>Your Name</h1>
+      <p>UI/UX Designer | Web Enthusiast</p>
+    </div>
+  </header>
+  
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hey there! I'm a passionate <strong>UI/UX designer</strong> who thrives on turning complex ideas into beautifully simple user experiences.
+      With a strong eye for detail and a love for problem-solving, I focus on creating interfaces that are both <strong>visually stunning</strong> and <strong>effortlessly functional</strong>.
+    </p>
+    <br/>
+    <p>
+      I’ve worked on various projects — from e-commerce redesigns to mobile app wireframes — and every challenge helps me grow my creativity and skillset. 
+      I love using tools like <strong>Figma</strong>, <strong>Adobe XD</strong>, and <strong>HTML/CSS</strong> to bring concepts to life.
+    </p>
+    <br/>
+    <p>
+      I believe great design isn’t just about how it looks — it’s about how it <strong>feels</strong>. That’s why I focus on user behavior, smooth interactions, and intuitive layouts.
+    </p>
+    <br/>
+    <p>
+      When I’m not designing, you’ll find me sketching new ideas, exploring animations, or staying up-to-date with the latest UI/UX trends.
+      Let’s create something amazing together 🚀
+    </p>
+  </section>
+    <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="card">
+        <img src="ecommerce.webp" alt="Project 1">
+        <h3>Redesign E-commerce UI</h3>
+        <p style="padding: 0 1rem 1rem;">
+          Revamped a cluttered e-commerce interface into a clean, conversion-friendly design. Focused on accessibility, mobile responsiveness, and product discoverability.
+        </p>
+      </div>
+      <div class="card">
+        <img src="mobile.jpg" alt="Project 2">
+        <h3>Mobile App Wireframes</h3>
+        <p style="padding: 0 1rem 1rem;">
+          Designed intuitive wireframes for a productivity app using Figma. Improved task flow and onboarding with user feedback sessions.
+        </p>
+      </div>
+      <div class="card">
+        <img src="landing.jpg" alt="Project 3">
+        <h3>Landing Page Concept</h3>
+        <p style="padding: 0 1rem 1rem;">
+          Built a visually engaging landing page concept for a SaaS product, incorporating modern UI trends and call-to-action placements.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <div class="bar"><div class="bar-fill" style="width: 90%">Figma - 90%</div></div>
+    <div class="bar"><div class="bar-fill" style="width: 85%">Adobe XD - 85%</div></div>
+    <div class="bar"><div class="bar-fill" style="width: 80%">HTML/CSS - 80%</div></div>
+    <div class="bar"><div class="bar-fill" style="width: 70%">JavaScript - 70%</div></div>
+    <div class="bar"><div class="bar-fill" style="width: 75%">Prototyping - 75%</div></div>
+    <div class="bar"><div class="bar-fill" style="width: 65%">User Research - 65%</div></div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function submitForm(e) {
+      e.preventDefault();
+      alert("Thanks for reaching out! I’ll get back to you soon.");
+    }
+
+    // Animate skill bars on scroll
+    const skills = document.querySelectorAll('.bar-fill');
+    window.addEventListener('scroll', () => {
+      const skillsTop = document.querySelector('#skills').offsetTop;
+      if (window.scrollY + window.innerHeight > skillsTop + 100) {
+        skills.forEach(skill => {
+          const match = skill.textContent.match(/\d+/);
+          if (match) {
+            skill.style.width = match[0] + '%';
+          }
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
